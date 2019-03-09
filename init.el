@@ -4,12 +4,12 @@
 
 ;; adding auto complete
 ;;(add-to-list 'load-path "~/.emacs.d")    ; This may not be appeared if you have already added.
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
+;;(require 'auto-complete-config)
+;;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+;;(ac-config-default)
 
 ;; trying rainbow delim mode
-(require 'rainbow-delimiters)
+;;(require 'rainbow-delimiters)
 
 ;; Customizations relating to editing a buffer.
 
@@ -59,7 +59,7 @@
   (untabify (region-beginning) (region-end))
   (keyboard-quit))
 
-(setq electric-indent-mode nill)
+(setq electric-indent-mode nil)
 
 ;; These customizations change the way emacs looks and disable/enable
 ;; some user interface elements. Some useful customizations are
@@ -151,7 +151,7 @@
 
 ;; This enables ido in all contexts where it could be useful, not just
 ;; for selecting buffer and file names
-(ido-ubiquitous-mode 1)
+;;(ido-ubiquitous-mode 1)
 
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
@@ -160,12 +160,12 @@
 ;; Enhances M-x to allow easier execution of commands. Provides
 ;; a filterable list of possible commands in the minibuffer
 ;; http://www.emacswiki.org/emacs/Smex
-(setq smex-save-file (concat user-emacs-directory ".smex-items"))
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
+;;(setq smex-save-file (concat user-emacs-directory ".smex-items"))
+;;(smex-initialize)
+;;(global-set-key (kbd "M-x") 'smex)
 
 ;; projectile everywhere!
-(projectile-global-mode)
+;;(projectile-global-mode)
 
 ;; Changes all yes/no questions to y/n type
 (fset 'yes-or-no-p 'y-or-n-p)
